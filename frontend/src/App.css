@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 70vw;
+  margin: 50px auto;
+}
+
+.search-container{
+align-self: flex-end;
+  
+  
+  
+}
+input{
+  padding:  7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
