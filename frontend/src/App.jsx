@@ -48,7 +48,9 @@ function App() {
     },
     {
       name: 'Date',
-      selector: row => row.date
+      selector: row => row.date,
+      sortable:true,
+
     },
     {
       name: 'Time',
@@ -89,9 +91,10 @@ function App() {
 
   return (
     <div className="container">
-      <div className='search-container' >
+    {customers.length>0 &&  (<div className='search-container' >
         <input type="text" placeholder='search...' onChange={handleSearch} />
-      </div>
+      </div>) }
+     
       <DataTable
         columns={columns}
         data={records}

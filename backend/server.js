@@ -1,13 +1,15 @@
 import { configDotenv } from 'dotenv'
 import express from 'express'
+import dotenv from 'dotenv'
 
 import pg from "pg";
-const { Client } = pg
+const { Client } = pg;
 
-const PORT = 5000
+dotenv.config();
+const PORT = process.env.PORT || 5000
 
 const app = express()
-configDotenv;
+
 
 const client = new Client({
     host: "localhost",
